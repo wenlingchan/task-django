@@ -35,13 +35,13 @@ python manage.py createsampletasks
 python manage.py runserver 0.0.0.0:8000
 ```
 
-## Manage tasks with Django web API
+## Manage tasks with Django human-computer interface
 
 Open any browser and go to ```localhost:8000```. You will see a login page.
 
 <img src="screenshot1.png" alt="screen shot 1"/>
 
-Login as the initial user set in the previous section. Then you will see the admin page. Go to ```Tasks```.
+Login as the initial user set in the previous section. Then you will see the admin page. Click ```Tasks``` then you will see the list of tasks.
 
 <img src="screenshot2.png" alt="screen shot 2"/>
 
@@ -56,6 +56,8 @@ Keep this page alive, then you will receive alert popup whenever a task is going
 ## Manage tasks with RESTful API
 
 Open any browser and go to ```localhost:8000/rest/tasks/```. You will see the list of tasks represented in JSON.
-You may need to login as the initial user set in the previous section, by clicking the link at the upper right corner.
-Go to ```localhost:8000/rest/tasks/1/``` and you will see the specific task (ID = 1) represented in JSON.
+
+<img src="screenshot4.png" alt="screen shot 4"/>
+
+Go to ```localhost:8000/rest/tasks/1/``` and you will see the specific task (here task ID = 1) represented in JSON.
 You may also use other tools (e.g. Postman, Curl) to access those URLs and the content will be raw JSON.
